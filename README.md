@@ -16,22 +16,21 @@ Navegue pelas pastas abaixo para encontrar o conteúdo desejado:
 
 Focado na padronização de imagens Windows via Microsoft Deployment Toolkit.
 
-* 
 **CustomSettings.ini:** Regras de automação e priorização de configurações.
-
-
-* 
+ 
 **Nomenclatura Automática:** Lógica baseada em chassi para Desktop (DSK), Laptop (NTB) e Virtual (VM) .
 
-
-* **Task Sequences:** Manuais de criação e manutenção de sequências de tarefas.
+**Task Sequences:** Manuais de criação e manutenção de sequências de tarefas.
 
 ### [2. Intune e MDM]()
 
 Gerenciamento moderno de dispositivos móveis e computadores.
 
-* Políticas de Conformidade e Configuração.
-* Distribuição de aplicativos e perfis de Wi-Fi/VPN.
+**Políticas de Conformidade e Configuração.** 
+
+**Distribuição de aplicativos e perfis de Wi-Fi/VPN** 
+
+**Criação/edição de arquivos .INTUNEWIN** 
 
 ### [3. Automação PowerShell]()
 
@@ -39,6 +38,9 @@ Scripts para otimizar o dia a dia do suporte técnico.
 
 * Limpeza de perfil de usuário e logs do sistema.
 * Scripts de inventário rápido e diagnóstico de rede.
+* Coleta de dados para atendimento inicial.
+* Resetar senha de usuário no AD.
+* Desbloquear conta no Active Directory.
 
 ### [4. GPOs e Windows Server]()
 
@@ -46,6 +48,19 @@ Políticas de grupo para gerenciamento centralizado de servidores e estações.
 
 * Hardening de Windows Server.
 * Configurações de segurança para navegadores e mapeamentos de rede.
+* Bloqueio de dispositivos removíveis (USB, discos externos).
+* Controle de acesso ao Painel de Controle e Configurações.
+* Scripts de logon/logoff para automação de tarefas (mapeamento de rede, impressoras).
+* Políticas de senha: complexidade, expiração e histórico.
+* Bloqueio de conta após tentativas de login inválidas.
+* Políticas de energia (hibernação, desligamento automático).
+* Bloqueio automático de sessão após inatividade.
+* Atualizações automáticas via WSUS.
+* Configuração de Remote Desktop Services (RDS).
+* Inventário de hardware e software.
+* Configuração automática de Wi*Fi corporativo.
+* Controle de acesso remoto via RDP.
+
 
 ### [5. Segurança e Bloqueio de IA]()
 
@@ -91,7 +106,3 @@ git clone https://github.com/seu-usuario/Guia-Infraestrutura-e-Seguranca.git
 ## 🤝 Contribuições
 
 Sinta-se à vontade para abrir uma *Issue* ou enviar um *Pull Request* com melhorias e novos scripts. Toda contribuição que facilite a vida do time de TI é bem-vinda!
-
----
-
-**Deseja que eu ajude a criar o primeiro arquivo `README.md` específico para a pasta do MDT, detalhando as variáveis de nomenclatura que analisamos no início?**
