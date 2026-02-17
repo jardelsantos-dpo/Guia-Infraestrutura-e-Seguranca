@@ -75,7 +75,7 @@ Governança sobre ferramentas de Inteligência Artificial Generativa.
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/Guia-Infraestrutura-e-Seguranca.git
+git clone https://github.com/jardelsantos-dpo/Guia-Infraestrutura-e-Seguranca.git
 
 ```
 
