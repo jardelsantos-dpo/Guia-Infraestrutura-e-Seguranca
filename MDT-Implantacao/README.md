@@ -59,20 +59,16 @@ Para evitar conflitos e padronizar o inventário, o nome do computador (**OSDCom
 
 Para agilizar o processo de suporte, diversas telas do assistente são suprimidas:
 
-* 
-**Senha de Administrador**: Definida automaticamente como `Teste@123` (deve ser alterada para produção).
+* **Senha de Administrador**: Definida automaticamente como `Teste@123` (deve ser alterada para produção).
 
 
-* 
-**Regionalização**: Teclado configurado em Português (Brasil) ABNT2 e Fuso Horário de Brasília.
+* **Regionalização**: Teclado configurado em Português (Brasil) ABNT2 e Fuso Horário de Brasília.
 
 
-* 
-**Página Inicial**: Configurada para `https://www.google.com.br`.
+* **Página Inicial**: Configurada para `https://www.google.com.br`.
 
 
-* 
-**Ação Final**: O computador realiza um **REBOOT** automático ao finalizar a Task Sequence.
+* **Ação Final**: O computador realiza um **REBOOT** automático ao finalizar a Task Sequence.
 
 
 
@@ -82,12 +78,10 @@ Para agilizar o processo de suporte, diversas telas do assistente são suprimida
 
 Os logs de cada instalação são enviados em tempo real para o servidor para facilitar o diagnóstico remoto:
 
-* 
-**Caminho dos Logs**: `\\SRV-2025-RJ\deploymentshare$\DeploymentLogs`.
+* **Caminho dos Logs**: `\\SRV-2025-RJ\deploymentshare$\DeploymentLogs`.
 
 
-* 
-**Serviço de Eventos**: `http://SRV-2025-RJ:9800`.
+* **Serviço de Eventos**: `http://SRV-2025-RJ:9800`.
 
 
 
@@ -101,5 +95,3 @@ Os logs de cada instalação são enviados em tempo real para o servidor para fa
 > 
 
 ---
-
-**Deseja que eu prepare agora o README para a seção de "GPOs-Windows-Server", focando em boas práticas de endurecimento (hardening) do sistema?**
