@@ -1,41 +1,45 @@
-# 🖥️ MDT - Implantação Automatizada
+<p align="center">
+<img src="../images/em_construcao.png" alt="Repositório em construção" width="60%">
+</p>
 
-Esta seção contém a documentação e os arquivos de configuração para o **Microsoft Deployment Toolkit (MDT)**. O foco principal é a automação do processo de deploy, garantindo que todos os dispositivos da organização sigam o mesmo padrão de configuração.
+# 🖥️ MDT - O que é
+
+O Microsoft Deployment Toolkit (MDT) é uma solução da Microsoft que simplifica a implantação automatizada de sistemas operacionais e aplicações. Este espaço foi criado para centralizar recursos práticos usados em ambientes de **Service Desk**, **infraestrutura de TI** e **Segurança da Informação**, com foco em **padronização, eficiência e automação** do processo de deployment.
+
+> 🎯 **Ideal para:** Equipes de suporte, administradores de rede e profissionais que desejam reduzir erros manuais, acelerar implantações e garantir consistência nos ambientes corporativos.
 
 > [!CAUTION]
 > **AVISO DE DESCONTINUIDADE E SEGURANÇA**
 > conforme comunicado oficial da Microsoft, o Microsoft Deployment Toolkit (MDT) foi descontinuado em janeiro de 2026.
 > * O MDT **não é homologado** para Windows 11 ou versões posteriores.
 > * A utilização contínua desta ferramenta pode expor o ambiente a vulnerabilidades não corrigidas.
-> * A Microsoft recomenda a transição para soluções modernas como **Microsoft Intune** ou **Windows Autopilot**, mas ambientes que possuem a ferramenta funcionando poderão mante-la até conseguirem efetivamente realizarem a transição para as soluções Microsoft ou outra solução open source como por exemplo **OPSI** ou **FOG Project**.
-> * A Microsoft recomenda a migração para soluções modernas, como  **Microsoft Intune** ou **Windows Autopilot**, no entanto, ambientes que já utilizam a ferramenta poderão mantê-la em funcionamento até que consigam realizar efetivamente a transição para as soluções da Microsoft ou para alternativas open source, como o **OPSI** ou **FOG Project**.
-
+> * A Microsoft recomenda a transição para soluções modernas como **Microsoft Intune** ou **Windows Autopilot**, no entanto, ambientes que já utilizam a ferramenta poderão mantê-la em funcionamento até que consigam realizar efetivamente a transição para as soluções da Microsoft ou para alternativas open source, como o **OPSI** ou **FOG Project**.
 > 
 > 
 > **Link Oficial:** [Documentação de Suporte do MDT (Microsoft)](https://learn.microsoft.com/pt-br/troubleshoot/mem/configmgr/mdt/mdt-retirement)
 
+## 📋 Requisitos Básicos
 
-## 📄 O arquivo CustomSettings.ini
+* MDT instalado e configurado no servidor.
+* Windows ADK compatível com sua versão do Sistema Operacional.
+* Conhecimento básico em *Deployment Workbench*.
+* Permissões administrativas no Active Directory e no Servidor de Arquivos.
 
-O `CustomSettings.ini` é o "cérebro" do MDT. Ele define as regras de priorização e automatiza as etapas do assistente de instalação permitindo padronização e eficiência do ambiente.
+## 📄 Guia Rápido: O arquivo CustomSettings.ini
 
-### Estrutura de Prioridade
+O `CustomSettings.ini` é o "cérebro" do MDT. Ele define as regras de priorização e automatiza as etapas do assistente de instalação, permitindo a padronização do ambiente. Por exemplo:
+
+### 1. Estrutura de Prioridade
 
 As configurações são aplicadas seguindo esta ordem de precedência:
 
-1. **Init**: Inicializa o número de série do hardware.
+* **Init**: Inicializa o número de série do hardware.
+* **ByDesktop, ByLaptop, ByVirtual**: Identifica o tipo de chassi.
+* **Default**: Aplica as configurações gerais do ambiente.
 
-2. **ByDesktop, ByLaptop, ByVirtual**: Identifica o tipo de chassi.
-
-3. **Default**: Aplica as configurações gerais do ambiente.
-
----
-
-## 🏷️ Lógica de Nomenclatura Automática
+### 2. Lógica de Nomenclatura Automática
 
 Para evitar conflitos e padronizar o inventário, o nome do computador (**OSDComputerName**) é gerado automaticamente combinando um prefixo de hardware com o número de série.
-
-### Definição de Prefixos
 
 | Tipo de Dispositivo | Variável de Gatilho | Prefixo (`ComputerPrefix`) | ID (`ComputerTypeName`) |
 | --- | --- | --- | --- |
@@ -43,50 +47,46 @@ Para evitar conflitos e padronizar o inventário, o nome do computador (**OSDCom
 | **Desktop** | `%IsDesktop%` | `DSK` | `D` |
 | **Virtual** | `%IsVM%` | `VM` | `V` |
 
-> 
-> **Exemplo:** Um notebook com serial `123456789` receberá o nome `NTB-123456789`.
-> 
-> 
+> **Exemplo Prático:** Um notebook com o serial `123456789` receberá automaticamente o nome `NTB-123456789`.
 
----
-
-## ⚙️ Configurações de Automação (Default)
+### 3. Automação e Monitoramento (Default)
 
 Para agilizar o processo de suporte, diversas telas do assistente são suprimidas:
 
-* **Senha de Administrador**: Definida automaticamente como `Teste@123` (deve ser alterada para produção).
+* **Acesso:** Senha de Administrador local pré-definida (deve ser alterada via GPO/LAPS em produção).
+* **Regionalização:** Teclado configurado em Português (Brasil) ABNT2 e Fuso Horário de Brasília.
+* **Ação Final:** O computador realiza um **REBOOT** automático ao finalizar a Task Sequence.
+* **Logs Centralizados:** Os logs de instalação são enviados em tempo real para `\\SERVIDOR\deploymentshare$\DeploymentLogs` para facilitar o diagnóstico remoto.
 
+## 📚 Índice de Conteúdos e Tutoriais
 
-* **Regionalização**: Teclado configurado em Português (Brasil) ABNT2 e Fuso Horário de Brasília.
+Explore os documentos abaixo para aprofundar seus conhecimentos nas configurações do MDT:
 
+### 🚀 Deploy & Otimização
 
-* **Página Inicial**: Configurada para `https://www.google.com.br`.
+* [Monte um CustomSettings.ini eficiente]() *(Versão Completa)*
+* [Configuração de Drivers por Modelo e Fabricante]()
+* [Instalação Silenciosa de Aplicativos via MDT]()
+* [Definir Papel de Parede durante o Deploy]()
+* [Criação de Imagem Personalizada (Capture)]()
 
+### 🔐 Segurança e Compliance
 
-* **Ação Final**: O computador realiza um **REBOOT** automático ao finalizar a Task Sequence.
+* [Aplicação de Políticas de Segurança Pós-Deploy]()
+* [Ativação Automática do BitLocker]()
 
+### 📦 Integrações Avançadas
 
+* [MDT + WSUS]()
+* [MDT + Intune (Auto-enroll)]()
+* [Deploy remoto via PXE + VPN]()
 
----
+### 🛠 Suporte ao Service Desk
 
-## 📊 Monitoramento e Logs
-
-Os logs de cada instalação são enviados em tempo real para o servidor para facilitar o diagnóstico remoto:
-
-* **Caminho dos Logs**: `\\SRV-2025-RJ\deploymentshare$\DeploymentLogs`.
-
-
-* **Serviço de Eventos**: `http://SRV-2025-RJ:9800`.
-
-
-
----
-
-## ⚠️ Manutenção
+* [Fluxo Visual de Deployment para Treinamento]()
+* [Checklist Pré e Pós-Deploy]()
+* [Criação de Usuários Locais com Permissões]()
 
 > [!IMPORTANT]
-> Qualquer alteração no arquivo `CustomSettings.ini` deve ser testada em ambiente de homologação antes de ser aplicada em produção.
-> 
-> 
+> Qualquer alteração nos arquivos de configuração do MDT deve ser testada rigorosamente em um ambiente de homologação (VMs) antes de ser replicada para o *Deployment Share* de produção.
 
----
