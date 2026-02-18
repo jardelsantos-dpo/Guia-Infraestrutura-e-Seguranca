@@ -12,7 +12,7 @@ Centralizar guias práticos, scripts de automação e políticas de conformidade
 
 Navegue pelas pastas abaixo para encontrar o conteúdo desejado:
 
-### [1. MDT - Implantação Automatizada]()
+### [1. MDT - Implantação Automatizada](./MDT-Implatancao)
 
 Focado na padronização de imagens Windows via Microsoft Deployment Toolkit.
 
@@ -32,7 +32,7 @@ Gerenciamento moderno de dispositivos móveis e computadores.
 
 **Criação/edição de arquivos .INTUNEWIN** 
 
-### [3. Automação PowerShell]()
+### [3. Automação PowerShell](./Automacao-PowerShell)
 
 Scripts para otimizar o dia a dia do suporte técnico.
 
