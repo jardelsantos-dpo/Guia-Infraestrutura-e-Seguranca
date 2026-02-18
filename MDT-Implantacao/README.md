@@ -21,18 +21,11 @@ O `CustomSettings.ini` é o "cérebro" do MDT. Ele define as regras de prioriza�
 
 As configurações são aplicadas seguindo esta ordem de precedência:
 
-1. 
-**Init**: Inicializa o número de série do hardware.
+1. **Init**: Inicializa o número de série do hardware.
 
+2. **ByDesktop, ByLaptop, ByVirtual**: Identifica o tipo de chassi.
 
-2. 
-**ByDesktop, ByLaptop, ByVirtual**: Identifica o tipo de chassi.
-
-
-3. 
-**Default**: Aplica as configurações gerais do ambiente.
-
-
+3. **Default**: Aplica as configurações gerais do ambiente.
 
 ---
 
