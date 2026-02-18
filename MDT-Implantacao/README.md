@@ -8,6 +8,8 @@ Esta seção contém a documentação e os arquivos de configuração para o **M
 > * O MDT **não é homologado** para Windows 11 ou versões posteriores.
 > * A utilização contínua desta ferramenta pode expor o ambiente a vulnerabilidades não corrigidas.
 > * A Microsoft recomenda a transição para soluções modernas como **Microsoft Intune** ou **Windows Autopilot**, mas ambientes que possuem a ferramenta funcionando poderão mante-la até conseguirem efetivamente realizarem a transição para as soluções Microsoft ou outra solução open source como por exemplo **OPSI** ou **FOG Project**.
+> * A Microsoft recomenda a migração para soluções modernas, como  **Microsoft Intune** ou **Windows Autopilot**, no entanto, ambientes que já utilizam a ferramenta poderão mantê-la em funcionamento até que consigam realizar efetivamente a transição para as soluções da Microsoft ou para alternativas open source, como o **OPSI** ou **FOG Project**.
+
 > 
 > 
 > **Link Oficial:** [Documentação de Suporte do MDT (Microsoft)](https://learn.microsoft.com/pt-br/troubleshoot/mem/configmgr/mdt/mdt-retirement)
