@@ -303,8 +303,7 @@ Versão: v2.0.0
 
 Sinta-se à vontade para usar, adaptar e sugerir melhorias.
 
-Este repositório promove a troca responsável de experiências entre profissionais de TI.
+## Licença
 
-**Licença:** MIT
-
-**Autor:** Jardel Santos,
+- Os **scripts PowerShell** deste repositório estão licenciados sob a [MIT License](../../LICENSE).
+- As **orientações, dicas e textos** estão licenciados sob [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
