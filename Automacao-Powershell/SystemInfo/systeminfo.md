@@ -124,7 +124,7 @@ Essa abordagem reduz preocupações relacionadas à LGPD e auditorias de privaci
 *   Crie um atalho na Área de Trabalho Pública:
 
 ```powershell
-powershell.exe -WindowStyle Hidden -File "C:\Program Files\SystemInfo\InfoPC.PS1"
+powershell.exe -WindowStyle Hidden -File "C:\ProgramData\InfoPC\InfoPC.PS1"
 ```
 
 ✅ **Recomendado:** executar scripts assinados respeitando a política de execução da organização.
@@ -140,7 +140,7 @@ Em ambientes corporativos, recomenda-se:
 Isso garante que apenas scripts confiáveis sejam executados:
 
 ```powershell
-powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "C:\Program Files\SystemInfo\InfoPC.PS1"
+powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "C:\ProgramData\InfoPC\InfoPC.PS1"
 ```
 
 ## 🎯 Finalidade e contexto
@@ -246,7 +246,7 @@ attrib +h "%DEST%\%ICON%"
 :: === Criar atalho com politica segura === 
 powershell -NoProfile -ExecutionPolicy RemoteSigned -Command ^ 
 "$WshShell = New-Object -ComObject WScript.Shell; ^ 
-$Shortcut = $WshShell.CreateShortcut('%DESKTOP_PUBLIC%\SystemInfo.lnk'); ^ 
+$Shortcut = $WshShell.CreateShortcut('%DESKTOP_PUBLIC%\InfoPC.lnk'); ^ 
 $Shortcut.TargetPath = 'powershell.exe'; ^ 
 $Shortcut.Arguments = '-NoProfile -ExecutionPolicy RemoteSigned -WindowStyle Hidden -File ""%DEST%\%SCRIPT%""'; ^ 
 $Shortcut.IconLocation = '%DEST%\%ICON%'; ^ 
