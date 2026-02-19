@@ -287,7 +287,7 @@ function Show-SystemInfo {
 
     $reader = New-Object System.Xml.XmlNodeReader $xaml
     $window = [Windows.Markup.XamlReader]::Load($reader)
-	$iconPath = "$env:PUBLIC\Documents\support-2.ico"
+	$iconPath = "$env:ProgramData\InfoPC\support-2.ico"
     if (Test-Path $iconPath) {
         $iconUri = New-Object System.Uri("file:///$iconPath")
         $window.Icon = [System.Windows.Media.Imaging.BitmapFrame]::Create($iconUri)
@@ -296,7 +296,8 @@ function Show-SystemInfo {
     }
 
     # Logo (Caminho padrão do seu script original)
-	$imagePath = "$env:PUBLIC\Documents\logo.webp" # Alterado para .webp
+	$imagePath = "$env:ProgramData\InfoPC\logo.webp" # Altere a imagem para a logo da sua empresa
+	
 	if (Test-Path $imagePath) {
 		try {
 			$logo = $window.FindName("LogoImage")
