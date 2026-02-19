@@ -33,7 +33,9 @@ O SystemInfo foi concebido com base em práticas modernas de segurança:
 *   Sistema Operacional (nome, versão, build)
 *   Data da Última Reinicialização
 
-
+<p align="center">
+<img src="../../images/tela-systeminfo.png" alt="Tela do SystemInfo" width="40%">
+</p>
 
 ## 🖼️ Interface gráfica
 
