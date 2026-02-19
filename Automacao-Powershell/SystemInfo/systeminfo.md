@@ -1,4 +1,4 @@
-# 📊 SystemInfo — Informações essenciais com segurança e governança
+# 📊 InfoPC — Informações essenciais com segurança e governança
 
 Este script PowerShell exibe informações da estação de trabalho em uma interface gráfica amigável, ideal para equipes de Service Desk em empresas de pequeno e médio porte.  
 Trata-se de uma alternativa leve, rápida e segura frente a ferramentas como *msinfo32*, *ipconfig* ou soluções RMM comerciais, permitindo a coleta de dados essenciais sem exigir privilégios administrativos ou instalação de agentes adicionais.
@@ -7,7 +7,7 @@ Projetado sob princípios de **mínimo privilégio**, o utilitário opera localm
 
 ## 🧭 Princípios de arquitetura
 
-O SystemInfo foi concebido com base em práticas modernas de segurança:
+O InfoPC foi concebido com base em práticas modernas de segurança:
 
 *   🔐 Execução com privilégios mínimos
 *   🧱 Operação local (sem transmissão de dados)
@@ -34,7 +34,7 @@ O SystemInfo foi concebido com base em práticas modernas de segurança:
 *   Data da Última Reinicialização
 
 <p align="center">
-<img src="../../images/tela-systeminfo.png" alt="Tela do SystemInfo" width="40%">
+<img src="../../images/tela-systeminfo.png" alt="Tela do InfoPC" width="40%">
 </p>
 
 ## 🖼️ Interface gráfica
@@ -195,12 +195,12 @@ A seguir, dispomos de um exemplo de script bat para deploy:
 setlocal ENABLEEXTENSIONS 
 
 :: === Configurações === 
-set "SOURCE=\\SERVIDOR\TI\SystemInfo" 
-set "DEST=C:\ProgramData\SystemInfo" 
+set "SOURCE=\\SERVIDOR\TI\InfoPC" 
+set "DEST=C:\ProgramData\InfoPC" 
 set "DESKTOP_PUBLIC=C:\Users\Public\Desktop" 
-set "SCRIPT=SystemInfo.ps1" 
+set "SCRIPT=InfoPC.ps1" 
 set "ICON=support-2.ico" 
-set "LOG_DIR=C:\ProgramData\SystemInfo\Logs" 
+set "LOG_DIR=C:\ProgramData\InfoPC\Logs" 
 
 :: === Timestamp seguro === 
 for /f "tokens=1-3 delims=/ " %%a in ("%date%") do set TODAY=%%c-%%b-%%a 
