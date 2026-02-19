@@ -295,7 +295,8 @@ Sua arquitetura simples favorece revisões de código e validações periódicas
 
 ## 📦 Versão
 
-**SystemInfo.ps1**  
+[**InfoPC.ps1**](../../scripts/InfoPC.ps1)
+ 
 Versão: v2.0.0
 
 ## 🤝 Contribuições
