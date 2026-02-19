@@ -6,7 +6,6 @@ Bem-vindo ao repositório central de documentação técnica e automação. Este
 
 Centralizar guias práticos, scripts de automação e políticas de conformidade, garantindo que a infraestrutura seja escalável e segura, desde o deploy da imagem até a governança de novas tecnologias.
 
----
 
 ## 📂 Estrutura do Repositório
 
@@ -69,7 +68,6 @@ Governança sobre ferramentas de Inteligência Artificial Generativa.
 * Listas de domínios para bloqueio (ChatGPT, Gemini, Claude, etc).
 * Scripts de bloqueio via arquivo `hosts` ou Firewall.
 
----
 
 ## 🚀 Como utilizar este guia
 
@@ -83,7 +81,6 @@ git clone https://github.com/jardelsantos-dpo/Guia-Infraestrutura-e-Seguranca.gi
 2. **Consulte a documentação:** Cada pasta contém um `README.md` específico explicando os pré-requisitos e como aplicar as configurações.
 3. **Teste antes de aplicar:** Nunca aplique scripts ou GPOs diretamente em produção sem validar em um ambiente de homologação.
 
----
 
 ## 🛡️ Melhores Práticas de Segurança
 
@@ -101,8 +98,16 @@ git clone https://github.com/jardelsantos-dpo/Guia-Infraestrutura-e-Seguranca.gi
 > 
 > 
 
----
 
 ## 🤝 Contribuições
 
 Sinta-se à vontade para abrir uma *Issue* ou enviar um *Pull Request* com melhorias e novos scripts. Toda contribuição que facilite a vida do time de TI é bem-vinda!
+
+
+## Licença
+
+- Os **scripts PowerShell** deste repositório estão licenciados sob a [MIT License](./LICENSE).
+- As **orientações, dicas e textos** estão licenciados sob [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+
+
