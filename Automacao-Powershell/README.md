@@ -4,7 +4,7 @@ Esta pasta centraliza scripts desenvolvidos em PowerShell para otimizar a rotina
 
 ## 🚀 Scripts Disponíveis
 
-### [📂 Coleta de Dados]()
+### [📂 Coleta de Dados](./SystemInfo/systeminfo.md)
 
 * **Nome:** `Systeminfo.ps1`
 * **Status:** ✅ Operacional e atualizado.
