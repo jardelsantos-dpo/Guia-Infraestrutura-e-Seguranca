@@ -1,4 +1,4 @@
-# 📘 Montando um CustomSettings.ini Eficiente
+# 📘 Montando um CustomSettings.ini eficiente
 
 > [!WARNING]
 > **AVISO DE DESCONTINUIDADE:** O MDT foi descontinuado e não suporta oficialmente o Windows 11. Este guia serve como referência para a manutenção de ambientes legados. Recomenda-se o planejamento de migração para o Microsoft Intune ou Autopilot.
@@ -150,7 +150,7 @@ A seção `[Default]` contém as configurações aplicadas se nenhuma outra regr
 
 > [!CAUTION]
 > **SEGURANÇA DA SENHA LOCAL:**
-> EVITE definir a senha de administrador diretamente no arquivo `CustomSettings.ini` (`AdminPassword=Teste@123`). O método mais seguro é configurar essa credencial durante a criação da `Task Sequence`. Mantivemos no script acima apenas para fins didáticos.
+> EVITE definir a senha de administrador diretamente no arquivo `CustomSettings.ini` (`AdminPassword=Teste@123`). O método mais seguro é configurar essa credencial durante a criação da `Task Sequence` (vide abaixo). Mantivemos no script acima apenas para fins didáticos.
 
 ### ⚙️ Controle do Assistente (Wizard)
 
