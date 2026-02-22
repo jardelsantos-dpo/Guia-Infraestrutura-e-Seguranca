@@ -11,7 +11,7 @@ Centralizar guias práticos, scripts de automação e políticas de conformidade
 
 Navegue pelas pastas abaixo para encontrar o conteúdo desejado:
 
-### [1. MDT - Implantação Automatizada](./MDT-Implantacao)
+### [1. MDT - Implantação Automatizada](./MDT-Implantacao/README.md)
 
 Focado na padronização de imagens Windows via Microsoft Deployment Toolkit.
 
