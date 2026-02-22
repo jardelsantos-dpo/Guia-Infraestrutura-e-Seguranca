@@ -64,7 +64,7 @@ Explore os documentos abaixo para aprofundar seus conhecimentos nas configuraç�
 
 ### 🚀 Deploy & Otimização
 
-* [Monte um CustomSettings.ini eficiente]() *(Versão Completa)*
+* [Monte um CustomSettings.ini eficiente](./docs/custom-settings-ini.md) *(Versão Completa)*
 * [Configuração de Drivers por Modelo e Fabricante]()
 * [Instalação Silenciosa de Aplicativos via MDT]()
 * [Definir Papel de Parede durante o Deploy]()
