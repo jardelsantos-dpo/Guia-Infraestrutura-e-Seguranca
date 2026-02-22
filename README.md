@@ -31,7 +31,7 @@ Gerenciamento moderno de dispositivos móveis e computadores.
 
 **Criação/edição de arquivos .INTUNEWIN** 
 
-### [3. Automação PowerShell](./Automacao-Powershell)
+### [3. Automação PowerShell](./Automacao-Powershell/README.md)
 
 Scripts para otimizar o dia a dia do suporte técnico.
 
