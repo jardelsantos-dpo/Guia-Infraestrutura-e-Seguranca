@@ -80,7 +80,7 @@ Evite diretórios amplamente acessíveis como:
 
 Prefira:
 
-*   `C:\Program Files\SystemInfo`
+*   `C:\Program Files\InfoPC`
 *   ou outro diretório protegido por ACL.
 
 **Motivo:** reduz o risco de substituição maliciosa do script.
@@ -124,7 +124,7 @@ Essa abordagem reduz preocupações relacionadas à LGPD e auditorias de privaci
 *   Crie um atalho na Área de Trabalho Pública:
 
 ```powershell
-powershell.exe -WindowStyle Hidden -File "C:\ProgramData\InfoPC\InfoPC.PS1"
+powershell.exe -WindowStyle Hidden -ExecutionPolicy RemoteSigned -File "C:\ProgramData\InfoPC\InfoPC.PS1"
 ```
 
 ✅ **Recomendado:** executar scripts assinados respeitando a política de execução da organização.
