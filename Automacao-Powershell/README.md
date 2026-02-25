@@ -6,7 +6,7 @@ Esta pasta centraliza scripts desenvolvidos em PowerShell para otimizar a rotina
 
 ### [📂 Coleta de Dados](./SystemInfo/systeminfo.md)
 
-* **Nome:** `Systeminfo.ps1`
+* **Nome:** `InfoPC.ps1`
 * **Status:** ✅ Operacional e atualizado.
 * **Descrição:** Coleta informações essenciais do hardware e software (HostName, IP, Serial Number, Versão do Windows e tempo de atividade) para agilizar o atendimento inicial.
 
